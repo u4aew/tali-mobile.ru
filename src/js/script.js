@@ -21,6 +21,14 @@ $(document).ready(function () {
             event.stopPropagation();
             controller.close('mmenu-overlay');
         });
+
+        $('.js-box-shadow').on('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            controller.close('mmenu-overlay');
+            $(".wrapper").removeClass("js-wrapper-active");
+            $(".js-box-shadow").removeClass("js-box-shadow-active");
+        });
     })(jQuery);
 
 })

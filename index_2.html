@@ -183,23 +183,6 @@
         <div class="row">
             <div class="col-xs-12" style="padding: 0">
                 <div class="footer">
-                    <div class="footer__cont">
-                        <span class="footer__cont__title"> Контакты </span>
-                        <br>
-                        8 (3852) 77-06-63
-                        <br>
-                        8 (3852) 39-88-46
-                        <br>
-                        8 (495) 798-97-28
-                        <br>
-                        8 (3852) 39-88-47
-                        <br>
-                        Skype: <a class="footer__cont__link"  href="skype:telfer.barnaul?call">telfer.barnaul</a>
-                        <br>
-                        ICQ 452081423
-                        <br>
-                        E-mail: <a class="footer__cont__link" href="mailto:barnaul@tali.ru">barnaul@tali.ru</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -246,18 +229,54 @@
             </ul>
         </div>
     </div>
-    <script src="/build/js/all.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".btn-mmenu").on("click", function () {
-                $(".wrapper").toggleClass("js-wrapper-active");
-                $(".js-box-shadow").toggleClass("js-box-shadow-active");
-            });
-            $(".btn-mmenu-close").on("click", function () {
-                $(".wrapper").removeClass("js-wrapper-active");
-                $(".js-box-shadow").removeClass("js-box-shadow-active");
-            })
-        })
-    </script>
+    </div>
+<div class="fixed-cont">
+    <i class="fa fa-phone fixed-cont__phone" aria-hidden="true"> </i>
+    <div class="fixed-cont__content">
+        <div class="fixed-cont__content-title">
+            Контакты
+        </div>
+        <div class="fixed-cont__content--number">
+        8 (3852) 77-06-63
+        <br>
+        8 (3852) 39-88-46
+        <br>
+        8 (495) 798-97-28
+        <br>
+        8 (3852) 39-88-47
+        <br>
+        Skype: <a class="footer__cont__link"  href="skype:telfer.barnaul?call">telfer.barnaul</a>
+        <br>
+        ICQ 452081423
+        <br>
+        E-mail: <a class="footer__cont__link" href="mailto:barnaul@tali.ru">barnaul@tali.ru</a>
+        </div>
+        </div>
+</div>
+<script src="/build/js/all.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn-mmenu").on("click", function () {
+            $(".wrapper").toggleClass("js-wrapper-active");
+            $(".js-box-shadow").toggleClass("js-box-shadow-active");
+        });
+
+        $(".btn-mmenu-close").on("click", function () {
+            $(".wrapper").removeClass("js-wrapper-active");
+            $(".js-box-shadow").removeClass("js-box-shadow-active");
+        });
+
+
+        $(".fixed-cont").on("click", function () {
+            $(".fixed-cont").toggleClass("js-fixed-cont-active");
+            $(".fixed-cont__phone").toggle();
+            $(".fixed-cont__content").toggle();
+        });
+
+
+
+
+    })
+</script>
 </body>
 </html>
