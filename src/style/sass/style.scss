@@ -170,9 +170,11 @@ ul {
   color: #1565c0;
 
 }
+
 .footer {
   min-height: 120px;
 }
+
 .b-mmenu-footer {
   margin: 0 auto;
   margin-top: 15px;
@@ -326,9 +328,18 @@ ul {
 }
 
 .category-block___content {
-  margin: 10px 0;
   padding: 5px;
   text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  visibility: hidden;
+  transition: .4s;
+}
+
+.js-active-category-block___content {
+  max-height: 500px;
+  visibility: visible;
+  margin: 10px 0;
 }
 
 .category-block {
@@ -403,12 +414,13 @@ ul {
   height: 70px;
   border-radius: 50%;
   text-align: center;
-  padding-top:40px;
+  padding-top: 30px;
   margin: 15px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: .4s;
 
 }
+
 .fixed-cont__phone {
   color: #fff;
   font-size: 36px;
@@ -416,6 +428,7 @@ ul {
   top: 20px;
   right: 20px;
 }
+
 .js-fixed-cont-active {
   border-radius: 0;
   width: 250px;
@@ -423,6 +436,7 @@ ul {
   transform: translateX(-20px);
   padding-top: 10px;
 }
+
 .fixed-cont__content {
   display: none;
   padding: 5px;
@@ -430,13 +444,15 @@ ul {
   color: white !important;
   font-size: 18px;
 }
+
 .fixed-cont__content-title {
- color: white;
+  color: white;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
 }
+
 .fixed-cont__content--number {
   padding: 0 20px;
 }
@@ -444,18 +460,43 @@ ul {
 .fixed-cont__close {
   text-align: right;
 }
+
 .js-box-shadow-active {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 1;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
+
 .btn-header-close {
   color: black;
 }
+
 .footer__three {
   margin-top: 15px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 3px;
+}
+
+.category-block__pic {
+  height: 120px !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.next-read__link {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.next-read {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.next-read__link {
+  text-align: center;
+  text-decoration: underline;
 }

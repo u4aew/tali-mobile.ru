@@ -30,5 +30,10 @@ $(document).ready(function () {
             $(".js-box-shadow").removeClass("js-box-shadow-active");
         });
     })(jQuery);
-
-})
+});
+$(document).ready(function () {
+    $(".next-read").on("click", function(){
+        var LongText = $(this).next();
+        LongText.toggleClass("js-active-category-block___content");
+    })
+});
