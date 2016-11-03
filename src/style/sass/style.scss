@@ -596,3 +596,31 @@ ul {
 .category-block-table tbody tr td:nth-child(2n) a i {
   margin-left: 10px;
 }
+.b-product__pic {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+}
+.b-product__title {
+  font-family: "RobotoBold";
+}
+.b-product__btn {
+  text-align: center;
+}
+
+.b-product-button {
+  width: 50%;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 15px;
+  text-decoration: none !important;
+  color: white !important;
+  background-color: #2196f3;
+  transition: .1s;
+}
