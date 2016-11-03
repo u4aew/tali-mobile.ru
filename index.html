@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/build/style/style.min.css">
 </head>
 <body>
+<div class="js-fixed-cont-shadow"></div>
 <div class="js-shadow"></div>
 <div class="wrapper" canvas="container">
     <div class="header">
@@ -61,7 +62,7 @@
                             пусковой аппаратурой и т.д.) смонтированы в одном корпусе или прикреплены к этому корпусу.
                         </div>
                         <div class="category-block___btn">
-                            <a href="/category.html" class="block___btn">Далее <i class="fa fa-arrow-circle-o-right"
+                            <a href="/category_1.html" class="block___btn">Далее <i class="fa fa-arrow-circle-o-right"
                                                                                   aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -82,7 +83,7 @@
                             пусковой аппаратурой и т.д.) смонтированы в одном корпусе или прикреплены к этому корпусу.
                         </div>
                         <div class="category-block___btn">
-                            <a href="/mobile_2.html" class="block___btn">Далее <i class="fa fa-arrow-circle-o-right"
+                            <a href="/category_1.html" class="block___btn">Далее <i class="fa fa-arrow-circle-o-right"
                                                                                   aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -315,9 +316,21 @@
             </ul>
         </div>
     </div>
-    </div>
+</div>
+<div class="fixed-cont fixed-cont__phones ">
+    <a href="tel:+73852398847"> <i class="fa fa-phone icon-fast" aria-hidden="true"></i></a>
+    <div class="fixed-cont-title"><a href="tel:+73852398847">Позвонить</a></div>
+</div>
+<div class="fixed-cont fixed-cont__email ">
+    <a href="mailto:barnaul@tali.ru">  <i class="fa fa-envelope icon-fast" aria-hidden="true"></i></a>
+    <div class="fixed-cont-title"><a href="mailto:barnaul@tali.ru">Написать письмо</a></div>
+</div>
+<div class="fixed-cont fixed-cont__skype">
+    <a href="skype:telfer.barnaul?call"><i class="fa fa-skype icon-fast" aria-hidden="true"></i></a>
+    <div class="fixed-cont-title"><a href="skype:telfer.barnaul?call">Позвонить в Skype</a></div>
+</div>
 <div class="fixed-cont">
-    <i class="fa fa-plus fixed-cont__phone"  aria-hidden="true"></i>
+    <i class="fa fa-plus fixed-cont__phone" aria-hidden="true"></i>
     <div class="fixed-cont__content">
         <div class="fixed-cont__content-title">
             Контакты
@@ -339,7 +352,7 @@
         </div>
     </div>
 </div>
-    <script src="/build/js/all.min.js"></script>
+<script src="/build/js/all.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".btn-mmenu").on("click", function () {
@@ -354,9 +367,10 @@
 
 
         $(".fixed-cont").on("click", function () {
-            $(".fixed-cont").toggleClass("js-fixed-cont-active");
-            $(".fixed-cont__phone").toggle();
-            $(".fixed-cont__content").toggle();
+            $(".js-fixed-cont-shadow").toggleClass("js-fixed-cont-shadow-active");
+            $(".fixed-cont__skype").toggleClass("fixed-cont__skype-visible");
+            $(".fixed-cont__email").toggleClass("fixed-cont__email-visible");
+            $(".fixed-cont__phones").toggleClass("fixed-cont__phones-visible");
         });
 
 
