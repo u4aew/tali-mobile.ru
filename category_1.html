@@ -28,7 +28,11 @@
                     </div>
                 </div>
                 <div class="col-xs-2">
-
+                    <div class="b-back-link">
+                        <a href="../" class="back-link">
+                            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-xs-7" style="padding: 0">
                     <div class="b-personal-area b-personal-area_current-color">
@@ -323,14 +327,16 @@
             $(".wrapper").removeClass("js-wrapper-active");
             $(".js-box-shadow").removeClass("js-box-shadow-active");
         });
-
-
         $(".fixed-cont").on("click", function () {
             $(".js-fixed-cont-shadow").toggleClass("js-fixed-cont-shadow-active");
             $(".fixed-cont__skype").toggleClass("fixed-cont__skype-visible");
             $(".fixed-cont__email").toggleClass("fixed-cont__email-visible");
             $(".fixed-cont__phones").toggleClass("fixed-cont__phones-visible");
         });
+        $(".js-fixed-cont-shadow-active").on("click",function () {
+
+            $(".js-fixed-cont-shadow-active").remove("js-fixed-cont-shadow-active");
+        })
 
 
     })

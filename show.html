@@ -27,10 +27,15 @@
                     </div>
                 </div>
                 <div class="col-xs-2">
-
+                    <div class="b-back-link">
+                        <a href="../" class="back-link">
+                            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-xs-7" style="padding: 0">
                     <div class="b-personal-area b-personal-area_current-color">
+
                         <a href="#" class="b-personal-area__link b-personal-area_current-color__link">
                             Барнаульские тали
                         </a>
@@ -57,7 +62,7 @@
 
 
                                 <div class="b-product_price">
-                                    <button class="b-product-button b-product-button-price">
+                                    <button onclick="location.href='#sdff';" class="b-product-button b-product-button-price">
                                         Узнать цену
                                     </button>
                                 </div>
@@ -66,7 +71,7 @@
                                         Оставить заявку
                                     </button>
                                 </div>
-                              <div class="b-form-order">
+                              <div id="sdff" class="b-form-order">
                                   <div class="b-form-order__body">
                                       <form action="">
                                           <label class="b-form-order__body-label" for="UserEmail"> Email или телефон </label>
@@ -83,8 +88,8 @@
                                     <div class="b-parametr__title">
                                         Технические характеристики
                                         <div class="b-parametr__download">
-                                            <div class="b-parametr__download__item"><a  href="/build/files/new_doc.pdf" target="_blank" download="Характеристики.pdf"> Скачать PDF</a></div>
-                                            <div class="b-parametr__download__item"><a href="/build/files/new_doc.docx" target="_blank" download="Характеристики.docx"> Скачать WORD</a></div>
+                                            <div class="b-parametr__download__item"><a  href="/build/files/new_doc.pdf" target="_blank" download="Характеристики.pdf"> Скачать PDF</a> </div>
+                                            <div class="b-parametr__download__item"><a href="/build/files/new_doc.docx" target="_blank" download="Характеристики.docx"> Скачать WORD</a> </div>
                                         </div>
                                         <table class="table-product table table-responsive">
                                             <thead>
@@ -267,6 +272,10 @@
             $(".fixed-cont__email").toggleClass("fixed-cont__email-visible");
             $(".fixed-cont__phones").toggleClass("fixed-cont__phones-visible");
         });
+        $(".js-fixed-cont-shadow-active").on("click",function () {
+            $(".js-fixed-cont-shadow-active").removeClass("js-fixed-cont-shadow-active");
+        })
+
     })
 </script>
 </body>

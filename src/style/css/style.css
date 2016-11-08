@@ -551,3 +551,9 @@ ul {
 
 .btn-order {
   margin: 10px 0 !important; }
+
+.back-link {
+  color: white !important; }
+
+.back-link i {
+  font-size: 43px; }
