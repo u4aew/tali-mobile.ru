@@ -492,13 +492,14 @@ ul {
   height: 150px; }
 
 .b-product__title {
-  font-family: "RobotoBold"; }
+  font-family: "RobotoBold";
+  font-size: 18px; }
 
 .b-product__btn {
   text-align: center; }
 
 .b-product-button {
-  width: 50%;
+  width: 80%;
   border: none;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -511,3 +512,42 @@ ul {
   color: white !important;
   background-color: #2196f3;
   transition: .1s; }
+
+.b-parametr__download__item {
+  display: inline-block;
+  margin: 15px; }
+
+.b-parametr__title {
+  font-weight: bold; }
+
+.table-product tr td:nth-child(2n) {
+  text-align: right; }
+
+.table-product tr td:nth-child(2n+1) {
+  text-align: left; }
+
+.b-parametr__download__item a {
+  text-decoration: underline;
+  font-size: 16px; }
+
+.b-form-order {
+  border: 1px solid lightgray;
+  margin: 10px 0;
+  display: none; }
+
+.js-b-form-order-active {
+  display: block; }
+
+.b-form-order__body {
+  text-align: left  !important;
+  padding: 30px; }
+
+.b-form-order__body-input {
+  display: block !important;
+  resize: none; }
+
+.b-form-order__body-label {
+  display: block !important; }
+
+.btn-order {
+  margin: 10px 0 !important; }

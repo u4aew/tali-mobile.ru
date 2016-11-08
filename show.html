@@ -14,7 +14,6 @@
 <div class="wrapper" canvas="container">
     <div class="header">
         <div class="js-box-shadow">
-
         </div>
         <div class="header-menu">
             <div class="row">
@@ -51,25 +50,86 @@
                             <div class="b-product__title">
                                 Таль электрическая ТЭ-100 грузоподъемностью 1,0 тонна
                             </div>
-                            <div class="b-product__pic" style="background-image: url('/build/img/t-10-normal-247x300.jpg')">
-
+                            <div class="b-product__pic"
+                                 style="background-image: url('/build/img/t-10-normal-247x300.jpg')">
                             </div>
                             <div class="b-product__btn">
 
 
-
                                 <div class="b-product_price">
-                                    <button class="b-product-button">
+                                    <button class="b-product-button b-product-button-price">
                                         Узнать цену
                                     </button>
                                 </div>
                                 <div class="b-product_order">
-                                    <button class="b-product-button">
+                                    <button class="b-product-button b-product-button-price">
                                         Оставить заявку
                                     </button>
                                 </div>
+                              <div class="b-form-order">
+                                  <div class="b-form-order__body">
+                                      <form action="">
+                                          <label class="b-form-order__body-label" for="UserEmail"> Email или телефон </label>
+                                          <input class="b-form-order__body-input form-control" id="UserEmail" type="text">
+                                          <label class="b-form-order__body-label" for="UserText">Сообщение</label>
+                                          <textarea class="b-form-order__body-input form-control" name="" id="UserText">
 
-
+                                          </textarea>
+                                          <button type="submit" class="btn btn-success btn-order">Отправить </button>
+                                      </form>
+                                  </div>
+                              </div>
+                                <div class="b-parametr">
+                                    <div class="b-parametr__title">
+                                        Технические характеристики
+                                        <div class="b-parametr__download">
+                                            <div class="b-parametr__download__item"><a  href="/build/files/new_doc.pdf" target="_blank" download="Характеристики.pdf"> Скачать PDF</a></div>
+                                            <div class="b-parametr__download__item"><a href="/build/files/new_doc.docx" target="_blank" download="Характеристики.docx"> Скачать WORD</a></div>
+                                        </div>
+                                        <table class="table-product table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Группа режима работы по ИСО 4301</td>
+                                                <td>М5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Скорость подъема</td>
+                                                <td>8 м/мин (0,133 м/сек)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Скорость передвижения</td>
+                                                <td>24 м/мин (0,4 м/сек)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Установленная мощность механизма</td>
+                                                <td>1,7+0,8 кВт</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Напряжение</td>
+                                                <td>380 В</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Монорельсовый путь ГОСТ 19425-74</td>
+                                                <td>24М; 30М; 36М</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Климатическое исполнение</td>
+                                                <td>У2; У3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Степень защиты электрооборудования</td>
+                                                <td>IP44</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -182,6 +242,16 @@
 <script src="/build/js/all.min.js"></script>
 <script>
     $(document).ready(function () {
+        $(".b-product-button-price").on("click",function () {
+            $(".b-form-order").toggleClass("js-b-form-order-active");
+        })
+    })
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
         $(".btn-mmenu").on("click", function () {
             $(".wrapper").toggleClass("js-wrapper-active");
             $(".js-box-shadow").toggleClass("js-box-shadow-active");
@@ -191,8 +261,6 @@
             $(".wrapper").removeClass("js-wrapper-active");
             $(".js-box-shadow").removeClass("js-box-shadow-active");
         });
-
-
         $(".fixed-cont").on("click", function () {
             $(".js-fixed-cont-shadow").toggleClass("js-fixed-cont-shadow-active");
             $(".fixed-cont__skype").toggleClass("fixed-cont__skype-visible");
